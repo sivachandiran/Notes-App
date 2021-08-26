@@ -27,9 +27,12 @@ Clicking on save, persists the note on device. Any image attached should be
 compressed and be associated with the note being saved.
 
 Note:
+
 ● You may use icons required for buttons from external sources which match the
 UI sufficiently well.
+
 ● Adding Auto Layout constraints programmatically for all UI elements would be
 preferred.
+
 ● Using an NSFetchedResultsController to display the list of notes in the home
 screen would be ideal.
