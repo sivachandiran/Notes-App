@@ -14,8 +14,13 @@ Case: A note with an image appears larger in the grid and takes up the full scre
 Assume Note 3 (Note with the title "10 excellent font pairing tools for designers") in the
 below screenshot has an image.
 
-Note: The image within the note detail controller is present only if the note has an
+![Screenshot 2021-08-26 at 10 14 25 AM](https://user-images.githubusercontent.com/1251782/130902078-ae66d912-8a7b-47d8-9f45-42d7a3b68192.png)
+
+Note: 
+The image within the note detail controller is present only if the note has an
 image. Else, the page only shows the note title and the body.
+
+![Screenshot 2021-08-26 at 10 14 33 AM](https://user-images.githubusercontent.com/1251782/130902083-d7195e59-cab6-473f-ad36-baf836a41628.png)
 
 The creation page allows you to create new notes. This page can be opened using the
 add floating action button in the bottom right shown in Example Screenshot 1. The
@@ -37,6 +42,3 @@ preferred.
 ● Using an NSFetchedResultsController to display the list of notes in the home
 screen would be ideal.
 
-![Screenshot 2021-08-26 at 10 04 14 AM](https://user-images.githubusercontent.com/1251782/130901208-29e8bf74-7f31-497d-a51d-29289b477c12.png)
-![Screenshot 2021-08-26 at 10 04 26 AM](https://user-images.githubusercontent.com/1251782/130901215-282d0dac-35f1-43ca-b861-28ff5aa8c0d5.png)
-![Screenshot 2021-08-26 at 10 04 37 AM](https://user-images.githubusercontent.com/1251782/130901218-74d45189-f683-49ba-bb06-83ecd7fc1ac4.png)
