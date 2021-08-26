@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BlL-wU-Tg8">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="jpz-eK-fYq">
+            <objects>
+                <navigationController navigationBarHidden="YES" id="BlL-wU-Tg8" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="lsJ-QC-4yr">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="tKJ-0t-SqE"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mzG-DZ-FnI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1712" y="318"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="NotesApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Kkh-g1-7K7">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="UuO-9O-ln2">
+                                <rect key="frame" x="0.0" y="90" width="390" height="754"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <collectionViewLayout key="collectionViewLayout" id="rPB-ER-72a" customClass="NotesLayout" customModule="NotesApp" customModuleProvider="target"/>
+                                <cells/>
+                                <connections>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="xlx-IU-mDN"/>
+                                </connections>
+                            </collectionView>
+                            <view clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="TRg-dU-HTo">
+                                <rect key="frame" x="315" y="758" width="50" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMinY="YES"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IUY-bE-vBY">
+                                        <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="30"/>
+                                        <state key="normal" image="Add_Note">
+                                            <color key="titleColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="createNote:" destination="BYZ-38-t0r" eventType="touchUpInside" id="CKi-by-W9Q"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Notes" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4vZ-UI-B9W">
+                                <rect key="frame" x="15" y="50" width="84.666666666666671" height="35"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="35" id="x63-rH-b24"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="30"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Ur2-Ts-0Lp"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="UuO-9O-ln2" firstAttribute="trailing" secondItem="Ur2-Ts-0Lp" secondAttribute="trailing" id="9dn-z9-UgR"/>
+                            <constraint firstItem="UuO-9O-ln2" firstAttribute="leading" secondItem="Ur2-Ts-0Lp" secondAttribute="leading" id="F20-tV-CFK"/>
+                            <constraint firstAttribute="bottom" secondItem="UuO-9O-ln2" secondAttribute="bottom" id="OSO-bO-xeL"/>
+                            <constraint firstItem="UuO-9O-ln2" firstAttribute="top" secondItem="4vZ-UI-B9W" secondAttribute="bottom" constant="5" id="RcE-1I-cXJ"/>
+                            <constraint firstItem="4vZ-UI-B9W" firstAttribute="leading" secondItem="Ur2-Ts-0Lp" secondAttribute="leading" constant="15" id="ZgB-VR-ceI"/>
+                            <constraint firstItem="4vZ-UI-B9W" firstAttribute="top" secondItem="Ur2-Ts-0Lp" secondAttribute="top" constant="6" id="a1Y-0t-dSJ"/>
+                            <constraint firstItem="UuO-9O-ln2" firstAttribute="top" secondItem="4vZ-UI-B9W" secondAttribute="bottom" constant="5" id="mDa-Pn-AnL"/>
+                            <constraint firstItem="Ur2-Ts-0Lp" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="4vZ-UI-B9W" secondAttribute="trailing" symbolic="YES" id="mgX-u9-VY9"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="qrF-QB-9Lx"/>
+                    <connections>
+                        <outlet property="collectionView" destination="UuO-9O-ln2" id="YRa-aT-ozN"/>
+                        <outlet property="viewCircle" destination="TRg-dU-HTo" id="vpx-rh-Q4a"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-522" y="318"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Add_Note" width="36" height="36"/>
+    </resources>
+</document>
