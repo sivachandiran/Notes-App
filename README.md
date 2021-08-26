@@ -1,3 +1,6 @@
+![Screenshot 2021-08-26 at 10 04 14 AM](https://user-images.githubusercontent.com/1251782/130901208-29e8bf74-7f31-497d-a51d-29289b477c12.png)
+![Screenshot 2021-08-26 at 10 04 26 AM](https://user-images.githubusercontent.com/1251782/130901215-282d0dac-35f1-43ca-b861-28ff5aa8c0d5.png)
+![Screenshot 2021-08-26 at 10 04 37 AM](https://user-images.githubusercontent.com/1251782/130901218-74d45189-f683-49ba-bb06-83ecd7fc1ac4.png)
 # Notes-App
 Description
 
